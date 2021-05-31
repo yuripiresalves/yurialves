@@ -1,0 +1,48 @@
+.container {
+  height: 100vh;
+  // padding: 0 8rem;
+  background: url('/assets/waves.svg') left bottom no-repeat;
+  background-color: var(--gray-300);
+}
+
+.content {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 40% 60%;
+
+  .info {
+    display: flex;
+    flex-direction: column;
+
+    img {
+      margin-top: 8rem;
+      width: 410px;
+    }
+
+    span {
+      font-size: 1.5rem;
+      max-width: 25rem;
+      text-align: center;
+      margin-top: 5.6rem;
+      margin-left: 1rem;
+    }
+
+    .social {
+      max-width: 25rem;
+      display: flex;
+      justify-content: space-between;
+      img {
+        width: 3.75rem;
+        margin-top: 5.6rem;
+      }
+    }
+  }
+
+  .image {
+    background-image: url('/assets/code.svg');
+    background-position: bottom right;
+    background-size: 704px 456px;
+    background-repeat: no-repeat;
+  }
+}
