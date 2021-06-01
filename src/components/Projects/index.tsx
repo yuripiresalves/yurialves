@@ -13,6 +13,10 @@ export function Projects() {
           <Card />
           <Card />
         </div>
+
+        <button type="button" className={styles.button}>
+          Ver mais
+        </button>
       </div>
     </div>
   );
