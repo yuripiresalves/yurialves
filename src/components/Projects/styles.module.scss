@@ -3,14 +3,50 @@
   padding-top: 3.75rem;
 
   .content {
-    max-width: 1170px;
+    max-width: 1234px;
     margin: 0 auto;
+    padding: 0 2rem;
 
     .cards {
-      margin-top: 3.75rem;
+      margin: 3.75rem 0 3.75rem;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-gap: 1.875rem;
+    }
+
+    .button {
+      display: block;
+      margin: 0 auto 4.735rem;
+
+      font-size: 2rem;
+      font-weight: bold;
+      color: var(--gray-50);
+      background-color: var(--purple-500);
+      padding: 1rem 0 1rem;
+      max-width: 23.125rem;
+      width: 100%;
+      border: 0;
+      border-radius: 0.6rem;
+    }
+  }
+}
+
+@media (max-width: 940px) {
+  .container {
+    .content {
+      .cards {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .container {
+    .content {
+      .cards {
+        grid-template-columns: 1fr;
+      }
     }
   }
 }

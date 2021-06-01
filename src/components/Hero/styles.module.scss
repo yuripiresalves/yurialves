@@ -1,48 +1,70 @@
 .container {
   height: 100vh;
-  // padding: 0 8rem;
   background: url('/assets/waves.svg') left bottom no-repeat;
   background-color: var(--gray-300);
-}
 
-.content {
-  max-width: 1170px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 40% 60%;
+  .content {
+    max-width: 1234px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 40% 60%;
 
-  .info {
-    display: flex;
-    flex-direction: column;
-
-    img {
-      margin-top: 8rem;
-      width: 410px;
-    }
-
-    span {
-      font-size: 1.5rem;
-      max-width: 25rem;
-      text-align: center;
-      margin-top: 5.6rem;
-      margin-left: 1rem;
-    }
-
-    .social {
-      max-width: 25rem;
+    .info {
       display: flex;
-      justify-content: space-between;
-      img {
-        width: 3.75rem;
+      flex-direction: column;
+
+      .logo {
+        margin-top: 8rem;
+        max-width: 410px;
+        width: 100%;
+      }
+
+      span {
+        font-size: 1.5rem;
+        max-width: 25rem;
+        text-align: center;
         margin-top: 5.6rem;
+        margin-left: 1rem;
+      }
+
+      .social {
+        max-width: 25rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 5.6rem;
+
+        img {
+          width: 3.75rem;
+        }
+
+        a:hover {
+          img {
+            filter: brightness(0) saturate(100%) invert(16%) sepia(36%)
+              saturate(6761%) hue-rotate(246deg) brightness(102%) contrast(89%);
+          }
+        }
       }
     }
-  }
 
-  .image {
-    background-image: url('/assets/code.svg');
-    background-position: bottom right;
-    background-size: 704px 456px;
-    background-repeat: no-repeat;
+    .image {
+      background-image: url('/assets/code.svg');
+      background-position: bottom right;
+      background-size: 704px 456px;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    .content {
+      display: flex;
+      justify-content: center;
+      .image {
+        background: none;
+      }
+    }
   }
 }

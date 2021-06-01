@@ -1,6 +1,7 @@
 .card {
-  width: 370px;
-  height: 370px;
+  // max-width: 370px;
+  // height: 370px;
+  width: 100%;
   background-color: var(--gray-100);
 
   display: flex;
@@ -27,7 +28,7 @@
     }
 
     .button {
-      margin-top: 3.5rem;
+      margin: 3.5rem 0;
       font-size: 1.6rem;
       font-weight: bold;
       color: var(--gray-50);
