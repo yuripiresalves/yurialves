@@ -39,7 +39,8 @@
           width: 3.75rem;
         }
 
-        a:hover {
+        a:hover,
+        a:focus {
           img {
             filter: brightness(0) saturate(100%) invert(16%) sepia(36%)
               saturate(6761%) hue-rotate(246deg) brightness(102%) contrast(89%);

@@ -22,10 +22,17 @@
         font-size: 1.2rem;
         font-weight: bold;
         color: var(--gray-700);
+        outline: none;
+        transition: 0.2s;
 
         &::placeholder {
           font-weight: normal;
           color: #696969;
+        }
+
+        &:focus,
+        &:hover {
+          box-shadow: 0 0 0 0px var(--gray-300), 0 0 3px 4px var(--purple-500);
         }
       }
 
@@ -38,6 +45,12 @@
         width: 17rem;
         border: 0;
         border-radius: 0.6rem;
+        transition: 0.2s;
+
+        &:hover,
+        &:focus {
+          box-shadow: 0 0 0 4px var(--gray-300), 0 0 0 5px var(--purple-500);
+        }
       }
     }
   }

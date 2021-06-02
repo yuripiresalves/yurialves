@@ -27,6 +27,12 @@
       width: 100%;
       border: 0;
       border-radius: 0.6rem;
+      transition: 0.2s;
+
+      &:hover,
+      &:focus {
+        box-shadow: 0 0 0 4px var(--gray-300), 0 0 0 5px var(--purple-500);
+      }
     }
   }
 }
