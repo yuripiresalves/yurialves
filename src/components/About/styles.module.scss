@@ -24,3 +24,11 @@
     }
   }
 }
+
+@media (max-width: 1080px) {
+  .container {
+    padding-bottom: 20rem;
+    background-image: url('/assets/yuri-mobile.png');
+    background-position: left bottom;
+  }
+}
