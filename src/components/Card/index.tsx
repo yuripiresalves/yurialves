@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styles from './styles.module.scss';
 
 export function Card() {
@@ -8,9 +9,11 @@ export function Card() {
       </div>
       <div className={styles.info}>
         <h2 className={styles.title}>Foodfy</h2>
-        <button className={styles.button} type="button">
-          Acessar
-        </button>
+        <Link href="/projetos/teste">
+          <button className={styles.button} type="button">
+            Acessar
+          </button>
+        </Link>
       </div>
     </div>
   );
