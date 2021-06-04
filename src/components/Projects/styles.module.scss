@@ -5,10 +5,10 @@
   .content {
     max-width: 1234px;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0 2rem 4.735rem;
 
     .cards {
-      margin: 3.75rem 0 3.75rem;
+      margin: 3.75rem 0;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-gap: 1.875rem;
@@ -16,7 +16,7 @@
 
     .button {
       display: block;
-      margin: 0 auto 4.735rem;
+      margin: 0 auto;
 
       font-size: 2rem;
       font-weight: bold;
