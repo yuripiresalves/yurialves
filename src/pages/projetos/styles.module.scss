@@ -12,8 +12,8 @@
     text-align: center;
 
     .image {
-      width: 770px;
-      height: 240px;
+      max-width: 770px;
+      max-height: 240px;
       margin: 0 auto;
       margin-top: 3.5rem;
 
@@ -26,23 +26,21 @@
     }
 
     .title {
-      margin: 4rem 0;
+      margin: 3rem 0 2rem;
     }
 
     .body {
       text-align: left;
-      font-size: 1.5rem;
+      font-size: 1.125rem;
+      line-height: 1.575rem;
 
       p {
-        margin: 0.5rem 0;
+        margin: 1rem 0;
+        text-align: justify;
       }
 
       ul {
         margin-left: 2.5rem;
-
-        li {
-          line-height: 2rem;
-        }
       }
 
       a {
@@ -57,7 +55,7 @@
 
     .button {
       display: block;
-      margin: 7rem auto 4.735rem;
+      margin: 3rem auto 4.735rem;
 
       font-size: 2rem;
       font-weight: bold;
