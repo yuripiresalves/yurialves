@@ -1,12 +1,26 @@
+import { useEffect } from 'react';
+import Typed from 'typed.js';
+
 import styles from './styles.module.scss';
 
 export function Hero() {
+  const options = {
+    strings: ['Desenvolvedor Web Front-end, ReactJS e Next.js.'],
+    typeSpeed: 30,
+  };
+
+  useEffect(() => {
+    const typed = new Typed('#el', options);
+  }, []);
+
   return (
     <div className={styles.container}>
       <div className={styles.content}>
         <div className={styles.info}>
           <img src="/assets/logo.svg" alt="Logo" className={styles.logo} />
-          <span>Desenvolvedor Web Front-end, ReactJS e Next.js.</span>
+          <div className={styles.typed}>
+            <span id="el"></span>
+          </div>
           <div className={styles.social}>
             <a href="https://github.com/yuripiresalves" target="_blank">
               <img src="/assets/github.svg" alt="Github" />

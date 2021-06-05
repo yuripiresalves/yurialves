@@ -20,12 +20,18 @@
         width: 100%;
       }
 
-      span {
+      .typed {
         font-size: 1.5rem;
         max-width: 25rem;
+        height: 58px;
         text-align: center;
         margin-top: 5.6rem;
         margin-left: 1rem;
+
+        span:last-child {
+          font-size: 1.5rem;
+          margin-left: 0.5rem;
+        }
       }
 
       .social {
