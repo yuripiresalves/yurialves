@@ -1,10 +1,14 @@
+import { FiUser } from 'react-icons/fi';
+
 import styles from './styles.module.scss';
 
 export function About() {
   return (
     <div className={styles.container}>
       <div className={styles.content}>
-        <h1>Sobre mim</h1>
+        <h1>
+          <FiUser size={32} /> Sobre mim
+        </h1>
         <p>
           Me chamo Yuri Alves, tenho 19 anos e estou fazendo gradução no curso
           de Bacharel em Informática pela Universidade Estadual de Maringá

@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { FiFileText } from 'react-icons/fi';
 
 import { Card } from '../Card';
 import styles from './styles.module.scss';
@@ -42,7 +43,9 @@ export function Projects({ projectsPagination }: ProjectProps) {
   return (
     <div className={styles.container}>
       <div className={styles.content}>
-        <h1>Últimos projetos</h1>
+        <h1>
+          <FiFileText size={32} /> Últimos projetos
+        </h1>
 
         <div className={styles.cards}>
           {projects.map((project) => {

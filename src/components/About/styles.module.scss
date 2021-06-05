@@ -9,15 +9,25 @@
   .content {
     max-width: 1234px;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 2rem 2rem;
 
     h1 {
       font-size: 2rem;
+      display: flex;
+      align-items: center;
+
+      svg {
+        margin-right: 1rem;
+        stroke-width: 0.15rem;
+        stroke: var(--purple-500);
+        width: 42px;
+        height: 42px;
+      }
     }
 
     p {
       max-width: 42rem;
-      font-size: 1.5rem;
+      font-size: 1.125rem;
       margin-top: 3.75rem;
       padding-bottom: 8.75rem;
       text-align: justify;
