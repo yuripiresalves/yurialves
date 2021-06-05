@@ -1,4 +1,5 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
+import { useRouter } from 'next/dist/client/router';
 import Head from 'next/head';
 import Link from 'next/link';
 
@@ -23,6 +24,12 @@ interface ProjectProps {
 }
 
 export default function Projeto({ project }: ProjectProps) {
+  const router = useRouter();
+
+  if (router.isFallback) {
+    return <div>Carregando...</div>;
+  }
+
   return (
     <div className={styles.container}>
       <Head>
