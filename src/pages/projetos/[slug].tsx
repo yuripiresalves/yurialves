@@ -76,8 +76,6 @@ export const getStaticProps: GetStaticProps = async (context) => {
   const prismic = getPrismicClient();
   const response = await prismic.getByUID('project', String(slug), {});
 
-  console.log(response);
-
   return {
     props: {
       project: {
@@ -87,5 +85,6 @@ export const getStaticProps: GetStaticProps = async (context) => {
         link: response.data.link.url,
       },
     },
+    revalidate: 60 * 60 * 24,
   };
 };
