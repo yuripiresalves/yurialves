@@ -34,6 +34,10 @@ export default function Projeto({ project }: ProjectProps) {
     <div className={styles.container}>
       <Head>
         <title>{project.title} - Yuri Alves</title>
+        <meta
+          name="description"
+          content={`Descrição do projeto ${project.title} desenvolvido por Yuri Alves`}
+        />
       </Head>
       <div className={styles.content}>
         <div className={styles.image}>

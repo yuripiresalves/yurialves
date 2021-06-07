@@ -30,6 +30,10 @@ export default function Home({ projectPagination }: HomeProps) {
     <>
       <Head>
         <title>Yuri Alves</title>
+        <meta
+          name="description"
+          content="Yuri Alves - Desenvolvedor Web Front-end, ReactJS e Next.js."
+        />
       </Head>
       <Hero />
       <About />
