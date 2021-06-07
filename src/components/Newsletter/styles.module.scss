@@ -7,12 +7,18 @@
     padding: 6.5625rem 2rem;
     text-align: center;
 
-    h2 {
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
-    }
-
     form {
+      label {
+        font-size: 1.5rem;
+        font-weight: bold;
+        display: block;
+        margin-bottom: 1rem;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
       input {
         max-width: 43.4375rem;
         width: 100%;
@@ -47,6 +53,11 @@
         border: 0;
         border-radius: 0.6rem;
         transition: 0.2s;
+
+        &:disabled {
+          cursor: not-allowed;
+          background: #696969;
+        }
 
         &:hover,
         &:focus {
