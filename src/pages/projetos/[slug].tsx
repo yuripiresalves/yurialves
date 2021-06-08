@@ -96,6 +96,6 @@ export const getStaticProps: GetStaticProps = async (context) => {
         link: response.data.link.url,
       },
     },
-    revalidate: 60 * 60 * 24,
+    revalidate: 60,
   };
 };
