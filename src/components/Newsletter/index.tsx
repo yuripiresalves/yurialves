@@ -15,6 +15,9 @@ export function Newsletter() {
       return toast.success(
         'Um e-mail de confirmação foi enviado para a sua caixa de entrada.'
       );
+    } else {
+      setIsLoading(false);
+      return toast.error('Algum erro aconteceu! Por favor, tente novamente.');
     }
   };
 
