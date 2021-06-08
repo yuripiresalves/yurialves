@@ -34,7 +34,10 @@ export function Hero() {
             <a href="https://linkedin.com/in/yuripiresalves" target="_blank">
               <img src="/assets/linkedin.svg" alt="Linkedin" />
             </a>
-            <a href="https://youtube.com/c/yuripiresalves" target="_blank">
+            <a
+              href="https://www.youtube.com/channel/UCzvpvlR2WpJFW3r33c9E5rQ"
+              target="_blank"
+            >
               <img src="/assets/youtube.svg" alt="YouTube" />
             </a>
             <a href="https://instagram.com/yuripa07" target="_blank">
